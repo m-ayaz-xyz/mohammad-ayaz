@@ -34,7 +34,7 @@ export default function Hero() {
 
         <h1 className="hero-title" style={{ marginBottom: '16px' }}>
           Hello.<br />
-          I'm <span style={{ color: 'var(--accent)' }}>Mohammad Ayaz.</span>
+          I'm <span style={{ color: 'var(--accent)' }}> Mohammad Ayaz.</span>
         </h1>
 
         <p style={{
