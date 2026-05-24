@@ -22,6 +22,7 @@ const posts = [
     tagColor: '#1a6bff',
     image: 'linear-gradient(135deg, #e8f0ff 0%, #c7d9ff 100%)',
   },
+  
   {
     id: 3,
     title: 'Why I Chose Brutalist Design for PlagScan',
