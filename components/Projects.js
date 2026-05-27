@@ -40,7 +40,7 @@ const projects = [
   },
   {
   id: 4,
-  title: 'RecycleConnect',
+  title: 'Recycle Connect',
   description:
     'Full-stack waste management platform that connects households with nearby recycling vendors. Features real-time geo-based vendor discovery, pickup scheduling, and price comparison. Built with Django REST Framework backend, PostgreSQL for production database, and React frontend with JWT authentication.',
   tags: ['React', 'Django REST', 'PostgreSQL'],
