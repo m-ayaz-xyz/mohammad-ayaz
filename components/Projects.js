@@ -1,6 +1,19 @@
 const projects = [
   {
-    id: 1,
+  id: 1,
+  title: 'Recycle Connect',
+  description:
+    'Full-stack waste management platform that connects households with nearby recycling vendors. Features real-time geo-based vendor discovery, pickup scheduling, and price comparison. Built with Django REST Framework backend, PostgreSQL for production database, and React frontend with JWT authentication.',
+  tags: ['Next.js', 'Express.js','Node.js', 'React Leaflet', 'OpenStreetMap', 'REST API', 'MongoDB'],
+  status: 'Working on it',
+  statusColor: '#00c896',
+  accent: '#2ecc71',
+  file: 'recycle-connect.jsx',
+  image: 'bg-green',
+  url: 'https://mohammad-ayaz.vercel.app/blog/recycleconnect',
+},
+  {
+    id: 2,
     title: 'AI LinkedIn Post Generator',
     description:
       'Full-stack AI web app that generates personalized LinkedIn posts with adjustable tone and length. Integrated Google Gemini API for content generation, Firebase for auth & data persistence, and a clean Shadcn UI.',
@@ -13,7 +26,7 @@ const projects = [
     url: 'https://github.com/m-ayaz-xyz/AI-LinkedIn-Post-Generator',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Forum Website',
     description:
       'Full-stack MERN community forum with JWT authentication, CRUD for posts, bookmark system, and post editing. RESTful APIs with optimized MongoDB schemas.',
@@ -26,7 +39,7 @@ const projects = [
     url : 'https://github.com/m-ayaz-xyz/forum-web-app',
   },
   {
-    id: 3,
+    id: 4,
     title: 'JSON Insight Tool',
     description:
       'A personal dev productivity tool for JSON formatting, validation, and nested key exploration. Clean UI, hosted and accessible publicly.',
@@ -38,19 +51,7 @@ const projects = [
     image: 'bg-red',
     url: 'https://jsoninsighttools.great-site.net/',
   },
-  {
-  id: 4,
-  title: 'Recycle Connect',
-  description:
-    'Full-stack waste management platform that connects households with nearby recycling vendors. Features real-time geo-based vendor discovery, pickup scheduling, and price comparison. Built with Django REST Framework backend, PostgreSQL for production database, and React frontend with JWT authentication.',
-  tags: ['React', 'Django REST', 'PostgreSQL'],
-  status: 'Working on it',
-  statusColor: '#00c896',
-  accent: '#2ecc71',
-  file: 'recycle-connect.jsx',
-  image: 'bg-green',
-  url: '#projects',
-},
+  
   // {
   //   id: 4,
   //   title: 'ProToolsHub',

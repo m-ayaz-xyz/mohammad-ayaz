@@ -1,0 +1,42 @@
+---
+title: "RecycleConnect"
+subtitle: "Connecting communities to recycling centers in real time"
+date: "2026-05-12"
+tags: ["MERN", "Next.js", "MongoDB", "Maps API"]
+coverImage: "/images/blog/recycleconnect-cover.png"
+video: "/videos/recycleconnect-demo.mp4"
+liveUrl: "https://recycleconnect.example.com"
+githubUrl: "https://github.com/Bbyte/recycleconnect"
+demoEmail: "demo@recycleconnect.app"
+demoPassword: "Demo@1234"
+---
+
+## The Problem
+
+Most people don't know where their nearest recycling center is, or what materials it
+actually accepts. RecycleConnect solves this by mapping verified recycling centers
+and letting users filter by material type in real time.
+
+## Tech Stack
+
+Built on the MERN stack with Next.js on the frontend for SSR-friendly SEO, and a
+Node/Express API backed by MongoDB Atlas for center data. Map rendering and
+geolocation search are handled client-side for a fast, app-like feel.
+
+## Key Features
+
+- Live search of recycling centers by material type and distance
+- User-submitted center verification with an admin approval flow
+- Responsive dashboard for center owners to manage listings
+- JWT-based auth with role separation (user / center-owner / admin)
+
+## Challenges
+
+Geospatial queries at scale needed care — indexing MongoDB with a `2dsphere` index
+brought nearby-search times down from ~800ms to under 60ms. Handling messy
+user-submitted address data required a normalization pass before geocoding.
+
+## What's Next
+
+Planned: a rewards system for consistent recyclers, and a public API so cities can
+plug their official recycling data directly into the platform.

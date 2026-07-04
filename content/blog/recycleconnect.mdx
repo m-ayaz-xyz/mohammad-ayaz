@@ -1,0 +1,176 @@
+---
+title: "RecycleConnect"
+subtitle: "Connecting communities to recycling centers in real time"
+date: "2026-05-12"
+tags: ["MERN", "Next.js", "MongoDB", "REST API"]
+liveUrl: "https://recycle-connect.vercel.app/"
+githubUrl: "https://github.com/m-ayaz-xyz/Recycle_Connect"
+demoEmail: "ayaz@gmail.com"
+demoPassword: "ayaz"
+---
+
+
+_A full-stack platform that connects users with nearby recyclable material vendors using real time location, interactive maps, and pickup scheduling._
+
+---
+
+## The Problem
+
+Recycling is still inconvenient for many people because they often don't know which scrap vendors operate nearby, what materials those vendors accept, or how to schedule a pickup. Most interactions happen through phone calls or local contacts, making the process slow and unorganized.
+
+**Recycle Connect** solves this problem by allowing users to discover verified vendors within an **`8 KM radius`**, compare material prices, schedule pickups, and manage their recycling requests through a single web application.
+
+---
+
+## Tech Stack
+
+Recycle Connect is built using a modern full stack JavaScript ecosystem.
+
+### Frontend
+
+- -Next.js 14
+- -React.js
+- -Tailwind CSS
+- -Axios
+- -React Leaflet
+- -OpenStreetMap
+
+### Backend
+
+- -Node.js
+- -Express.js
+- -JWT Authentication
+- -REST APIs
+
+### Database
+
+- -MongoDB Atlas
+- -Mongoose
+
+### Deployment
+
+- -Vercel (Frontend)
+- -Render (Backend)
+
+---
+
+## Architecture
+
+
+---
+
+## Key Features
+
+### Nearby Vendor Discovery
+
+Users can discover vendors located within an **`8 KM radius`** using browser geolocation and the `Haversine Formula`.
+
+---
+
+### Interactive Maps
+
+OpenStreetMap and React Leaflet provide an interactive map showing:
+
+- -User location
+- -Vendor locations
+- -Distance visualization
+- -Route line between user and vendor
+
+---
+
+### Pickup Scheduling
+
+Users can:
+
+- -Select recyclable materials
+- -Enter weight
+- -Choose pickup date, time & location
+- -Submit pickup requests
+
+---
+
+### Vendor Dashboard
+
+Vendors can:
+
+- -Create shop profiles
+- -Update shop location
+- -Manage recyclable material prices
+- -View incoming pickup requests
+
+---
+
+### Order Management
+
+Users can:
+
+- -View pickup history
+- -Track order status
+- -Cancel requests within **4 hours**
+
+Vendors can:
+
+- -Accept orders
+- -Manage pending pickups
+- -View complete order details
+
+---
+
+### Secure Authentication
+
+Role based authentication using JWT ensures separate dashboards for:
+
+- -Users
+- -Vendors
+
+Protected routes prevent unauthorized access throughout the application.
+
+---
+
+## Challenges
+
+Building Recycle Connect involved solving several real world engineering problems.
+
+### Accurate Nearby Vendor Search
+
+Instead of comparing latitude and longitude directly, the application uses the **Haversine Formula** to calculate the actual distance between users and vendors.
+
+---
+
+### Interactive Map Integration
+
+Integrating React Leaflet with Next.js required handling client side rendering using dynamic imports because Leaflet depends on browser APIs.
+
+---
+
+### Authentication After Deployment
+
+JWT authentication worked locally but initially failed after deployment due to cookie and CORS configuration. Proper credential handling and secure cookie settings resolved the issue.
+
+---
+
+### Responsive Layout
+
+The dashboard and vendor pages were redesigned for mobile devices to provide a smooth experience while keeping maps, vendor information, and action buttons easily accessible.
+
+---
+
+## Results
+
+The final application includes:
+
+- -JWT Authentication
+- -Role based Dashboards
+- -Live Geolocation
+- -Interactive Maps
+- -Nearby Vendor Discovery
+- -Pickup Scheduling
+- -Vendor Management
+- -Order Tracking
+- -Responsive Design
+
+---
+
+## Final Thoughts
+
+Recycle Connect is a learning focused full stack project that combines authentication, location services, interactive maps, and order management into a practical recycling platform. It demonstrates how modern web technologies can be used together to solve a real world problem while providing valuable hands on experience with frontend, backend, databases, deployment, and system design.

@@ -1,0 +1,165 @@
+.blog-page {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    color: #ffffff;
+}
+
+.blog-kicker {
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+.blog-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 0.5rem;
+    color: #000000;
+}
+
+.blog-subtitle {
+    color: #37393d;
+    font-size: 1.05rem;
+    margin: 0 0 1.25rem;
+}
+
+.blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: #404348;
+    margin-bottom: 1.5rem;
+}
+
+.blog-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.blog-tag {
+    background: #1a1a1a;
+    border: 1px solid #2e2e2e;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    color: #a3e635;
+}
+
+.blog-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.blog-link-btn {
+    border: 1px solid #a3e635;
+    color: #36b226;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.blog-link-btn:hover {
+    background: rgba(50, 67, 253, 0.1);
+}
+
+.blog-link-btn.ghost {
+    border-color: #3f3f3f;
+    color: #4c93ff;
+}
+
+.blog-link-btn.ghost:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.blog-cover {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 1px solid #2a2a2a;
+}
+
+.blog-cover img {
+    width: 100%;
+    display: block;
+}
+
+.demo-creds {
+    background: #111111;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.demo-creds-label {
+    color: #6b7280;
+    font-size: 0.8rem;
+    margin: 0 0 1rem;
+}
+
+.demo-creds-grid {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.blog-video {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    border: 1px solid #2a2a2a;
+}
+
+.blog-video video {
+    width: 100%;
+    display: block;
+    background: #000;
+}
+
+.blog-content {
+    line-height: 1.75;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.blog-content h2 {
+    color: #000000;
+    font-size: 1.4rem;
+    margin: 2rem 0 0.75rem;
+}
+
+.blog-content p {
+    margin: 0 0 1rem;
+}
+
+.blog-content ul {
+    margin: 0 0 1rem 1.25rem;
+}
+
+.blog-content li {
+    margin-bottom: 0.4rem;
+}
+
+.blog-content code {
+    background: #1a1a1a;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+@media (max-width: 640px) {
+    .blog-title {
+        font-size: 1.6rem;
+    }
+}

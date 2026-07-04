@@ -8,7 +8,7 @@ export default function Navbar() {
   const links = [
     { label: 'Projects', href: '#projects' },
     { label: 'Skills', href: '#skills' },
-    { label: 'Resume', href: 'https://drive.google.com/file/d/1zuEe0JVhGWiASGzqW049vbugGsJoPaEw/view?usp=drivesdk' },
+    { label: 'Resume', href: 'https://drive.google.com/file/d/1JBouLxrHG35iYCPf_cuxVKGtbw5A4zHP/view' },
     { label: 'About', href: '#about' },
     { label: 'Contact', href: '#contact' },
   ]
