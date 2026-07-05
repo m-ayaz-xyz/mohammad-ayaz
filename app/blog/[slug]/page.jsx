@@ -6,6 +6,8 @@ import Footer from "../../../components/Footer";
 import CopyField from "../../../components/CopyField";
 import { getAllSlugs, getBlogBySlug } from "../../../lib/blog";
 import "./blog.css";
+import { FaFigma, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
 
 // ---- Static params (replaces getStaticPaths) ----
 export async function generateStaticParams() {
@@ -37,8 +39,13 @@ export default async function BlogPost({ params }) {
     video,
     liveUrl,
     githubUrl,
-    demoEmail,
-    demoPassword,
+    usercredential,
+    demouserEmail,
+    demouserPassword,
+    admincredential,
+    demovendorEmail,
+    demovendorPassword,
+    designUrl,
   } = frontmatter;
 
   return (
@@ -75,13 +82,18 @@ export default async function BlogPost({ params }) {
 
           <div className="blog-links">
             {liveUrl && (
-              <a href={liveUrl} target="_blank" rel="noreferrer" className="blog-link-btn">
-                Live Demo →
+              <a href={liveUrl} target="_blank" rel="noreferrer" className="flex items-center gap-2 border border-solid border-slate-700 rounded-md px-3 py-3 text-sm bg-blue-300 text-black font-medium hover:bg-slate-800 hover:text-white transition-colors">
+                <FaExternalLinkAlt size={16} /> <p>Live Demo →</p> 
               </a>
             )}
             {githubUrl && (
-              <a href={githubUrl} target="_blank" rel="noreferrer" className="blog-link-btn ghost">
-                Source Code →
+              <a href={githubUrl} target="_blank" rel="noreferrer" className="flex items-center gap-2 border border-solid border-slate-700 rounded-md px-3 py-1 text-sm bg-white text-black font-medium hover:bg-slate-800 hover:text-white transition-colors">
+                <FaGithub size={16}/> Source Code →
+              </a>
+            )}
+            {designUrl && (
+              <a href={designUrl} target="_blank" rel="noreferrer" className="flex items-center gap-2 border border-solid border-slate-700 rounded-md px-3 py-1 text-sm bg-green-200 text-black font-medium hover:bg-slate-800 hover:text-white transition-colors">
+                <FaFigma size={16} /> Design →
               </a>
             )}
           </div>
@@ -94,13 +106,24 @@ export default async function BlogPost({ params }) {
           </div>
         )}
 
-        {/* ---- Demo Credentials ---- */}
-        {(demoEmail || demoPassword) && (
+        {/* ---- Demo User Credentials ---- */}
+        {(demouserEmail || demouserPassword) && (
           <section className="demo-creds">
-            <p className="demo-creds-label">// demo user credentials</p>
+            <p className="demo-creds-label">{usercredential}</p>
             <div className="demo-creds-grid">
-              {demoEmail && <CopyField label="Email" value={demoEmail} />}
-              {demoPassword && <CopyField label="Password" value={demoPassword} />}
+              {demouserEmail && <CopyField label="Email" value={demouserEmail} />}
+              {demouserPassword && <CopyField label="Password" value={demouserPassword} />}
+            </div>
+          </section>
+        )}
+
+        {/* ---- Demo Admin Credentials ---- */}
+        {(demovendorEmail || demovendorPassword) && (
+          <section className="demo-creds">
+            <p className="demo-creds-label">{admincredential}</p>
+            <div className="demo-creds-grid">
+              {demovendorEmail && <CopyField label="Email" value={demovendorEmail} />}
+              {demovendorPassword && <CopyField label="Password" value={demovendorPassword} />}
             </div>
           </section>
         )}

@@ -10,7 +10,7 @@ const projects = [
   accent: '#2ecc71',
   file: 'recycle-connect.jsx',
   image: 'bg-green',
-  url: 'https://mohammad-ayaz.vercel.app/blog/recycleconnect',
+  url: 'blog/recycleconnect',
 },
   {
     id: 2,
