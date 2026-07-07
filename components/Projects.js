@@ -3,9 +3,10 @@ const projects = [
   id: 1,
   title: 'Recycle Connect',
   description:
-    'Full-stack waste management platform that connects households with nearby recycling vendors. Features real-time geo-based vendor discovery, pickup scheduling, and price comparison. Built with Django REST Framework backend, PostgreSQL for production database, and React frontend with JWT authentication.',
+    'A location-aware full-stack recycling platform that bridges the gap between households and local recycling vendors. Users can discover nearby vendors on an interactive map, compare material prices, schedule pickups, and track orders, while vendors manage their profiles, locations, pricing, and incoming requests through a dedicated dashboard. Built using Next.js, Node.js, Express.js, MongoDB Atlas, React Leaflet, OpenStreetMap, and JWT-based authentication.',
   tags: ['Next.js', 'Express.js','Node.js', 'React Leaflet', 'OpenStreetMap', 'REST API', 'MongoDB'],
-  status: 'Working on it',
+  // status: 'Working on it',
+  status: 'Completed',
   statusColor: '#00c896',
   accent: '#2ecc71',
   file: 'recycle-connect.jsx',
